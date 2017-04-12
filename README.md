@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to My Project Page!
 
-You can use the [editor on GitHub](https://github.com/rowansharman/rowansharman.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Rowan Sharman is a student at Olin College studying the intersection between electrical and mechanical systems.
+This is his project page.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Personal Projects
 
-### Markdown
+[Persistence of Vision Writer](https://github.com)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Relay Board](https://github.com)
 
-```markdown
-Syntax highlighted code block
+[Laser Angle Survey Device](https://github.com)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Team Projects at Olin
+[ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture 1](https://github.com)
 
-1. Numbered
-2. List
+[ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture 2](https://github.com)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### Contact
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rowansharman/rowansharman.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Contact me at rowan.sharman@students.olin.edu
