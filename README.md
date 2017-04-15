@@ -26,4 +26,5 @@ An elegant purpose-built device for finding angles over long distances.
 ***
 ### Contact
 
-I'd love to hear from you! Contact me at [rowan.sharman@students.olin.edu](mailto:rowan.sharman@students.olin.edu)
+I'd love to hear from you! Contact me at [rowan.sharman@students.olin.edu](mailto:rowan.sharman@students.olin.edu)  
+I'm also on [LinkedIn](https://linkedin.com/in/rowansharman)
