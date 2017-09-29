@@ -21,7 +21,7 @@ An elegant purpose-built device for finding angles over long distances.
 ### Team Projects at Olin
 [ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture: Safety in Numbers](https://rowansharman.github.io/MechProto1)
 
-[ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture 2 (WIP)](https://rowansharman.github.io/MechProto2)
+[ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture 2: Lighthouse Catastrophe](https://rowansharman.github.io/MechProto2)
 
 ***
 ### Contact
