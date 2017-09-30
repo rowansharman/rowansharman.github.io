@@ -19,7 +19,7 @@ An elegant purpose-built device for finding angles over long distances.
 
 ***
 ### Team Projects at Olin
-[ENGR2110: Principles of Engineering; 3D Scanner](https://github.com/rowansharman/POE_scanner)
+[ENGR2110: Principles of Engineering; 3D Scanner](https://rowansharman.github.io/POE_scanner)
 
 [ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture: Safety in Numbers](https://rowansharman.github.io/MechProto1)
 
@@ -28,7 +28,7 @@ An elegant purpose-built device for finding angles over long distances.
 
 ***
 ### Research
-[Summer 2017: Blind Sailing Tack Indicator](https://github.com/rowansharman/TackSensor)
+[Summer 2017: Blind Sailing Tack Indicator](https://rowansharman.github.io/TackSensor)
 
 
 ***
