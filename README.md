@@ -1,6 +1,6 @@
 ## Welcome to Rowan's Project Page!
 
-Rowan Sharman is a student at Olin College studying the intersection between electrical and mechanical systems. He loves mechanical design, getting his hands dirty with fabrication, and just making things in general.
+I am a student at Olin College studying the intersection between electrical and mechanical systems. I love mechanical design, getting my hands dirty with fabrication, and just making things in general.
 
 ***
 ### Personal Projects
