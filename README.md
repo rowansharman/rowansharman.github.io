@@ -19,6 +19,9 @@ An elegant purpose-built device for finding angles over long distances.
 
 ***
 ### Team Projects at Olin
+
+[ENGR2110: Principles of Engineering; Ball-Bouncing Robot](https://rowansharman.github.io/POE_final/)
+
 [ENGR2110: Principles of Engineering; 3D Scanner](https://rowansharman.github.io/POE_scanner/)
 
 [ENGR2330: Intro to Mechanical Prototyping; Kinetic Sculpture: Safety in Numbers](https://rowansharman.github.io/MechProto1/)
