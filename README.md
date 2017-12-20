@@ -6,7 +6,7 @@ I am a student at Olin College studying the intersection between electrical and 
 ***
 ### Team Projects at Olin
 
-[ENGR2110: Principles of Engineering; Ball-Bouncing Robot](https://rowansharman.github.io/POE_final/)
+[ENGR2110: Principles of Engineering; Ball-Bouncing Robot](https://rowansharman.github.io/bounce/)
 
 [ENGR2110: Principles of Engineering; 3D Scanner](https://rowansharman.github.io/POE_scanner/)
 
