@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="./Template_files/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.mySlides {display:none;}
 </style>
 </head><body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -129,6 +130,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div></a>
   </div>
+  <div class="w3-row-padding">
+    <a href="http://rowansharman.com/OtherProjects"><div class="w3-third w3-container w3-margin-bottom w3-hover-opacity">
+      <div class="w3-full"> <!--slideshow images -->
+        <img class="mySlides" src="http://rowansharman.com/OtherProjects/images/treehouse/treehouse.jpg" style="width:100%">
+        <img class="mySlides" src="http://rowansharman.com/OtherProjects/images/sawhorses/sawhorseSmall.jpg" style="width:100%">
+      </div>
+      <div class="w3-container w3-white">
+        <p><b>Other Projects</b></p>
+        <p>Gallery of images of some of my less well-documented and/or smaller personal projects</p>
+      </div>
+    </div></a>
+  </div>
 
 
   <!-- Images of Me -->
@@ -185,6 +198,23 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
