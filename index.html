@@ -2,7 +2,13 @@
 <!-- saved from url=(0064)https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm -->
 <html>
 <head>
-
+  <?php
+  if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+  $ip=$_SERVER['HTTP_CLIENT_IP'];}
+  elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];} else {
+  $ip=$_SERVER['REMOTE_ADDR'];}
+  ?>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111601381-1"></script>
   <script>
@@ -266,7 +272,10 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
   </script>
-
+  
+  <script type='text/javascript'>
+   _gaq.push(['_setCustomVar', 1, 'IP', '<?=$ip;?>', 1]);
+  </script>
 
 </body>
 
