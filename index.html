@@ -272,9 +272,10 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
   </script>
-  
+
   <script type='text/javascript'>
-   _gaq.push(['_setCustomVar', 1, 'IP', '<?=$ip;?>', 1]);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setCustomVar', 1, 'IP', '<?=$ip;?>', 1]);
   </script>
 
 </body>
