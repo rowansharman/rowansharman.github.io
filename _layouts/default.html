@@ -17,13 +17,13 @@
 
   <script src="https://use.fontawesome.com/82fe970e1b.js"></script>
 
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../Template_files/w3.css">
+  <link rel="stylesheet" href="/Template_files/w3.css">
   <!--<link rel="stylesheet" href="./Template_files/css">-->
-  <link rel="stylesheet" href="../Template_files/font-awesome.min.css">
+  <link rel="stylesheet" href="/Template_files/font-awesome.min.css">
   <link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One&amp;ver=3.0.0" type="text/css" media="all">
 
   <style>
@@ -40,7 +40,7 @@
       <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-      <img src="./images/Sharman_RowanCrop.jpg" style="width:45%;" class="w3-round"><br><br>
+      <img src="/images/Sharman_RowanCrop.jpg" style="width:45%;" class="w3-round"><br><br>
       <h4><b>ROWAN SHARMAN</b></h4>
     </div>
     <div class="w3-bar-block">
@@ -61,6 +61,8 @@
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:300px">
     {{ content }}
+    {% include contact.html %}
+    {% include templateCred.html %}
   </div>
 
   <script>
