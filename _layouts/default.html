@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm -->
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111601381-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-111601381-1');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>{{ page.title }}</title>
+
+  <script src="https://use.fontawesome.com/82fe970e1b.js"></script>
+
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Template_files/w3.css">
+  <!--<link rel="stylesheet" href="./Template_files/css">-->
+  <link rel="stylesheet" href="../Template_files/font-awesome.min.css">
+  <link rel="stylesheet" id="google-fonts-css" href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One&amp;ver=3.0.0" type="text/css" media="all">
+
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {font-family: "Raleway", sans-serif}
+    .mySlides {display: none;}
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px; display: none;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+      <img src="./images/Sharman_RowanCrop.jpg" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>ROWAN SHARMAN</b></h4>
+    </div>
+    <div class="w3-bar-block">
+      <a href="http://rowansharman.com#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+      <a href="http://rowansharman.com#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="http://rowansharman.com#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <a href="mailto:rowan.sharman@students.olin.edu"><i class="fa fa-envelope w3-hover-opacity">  |  </i></a>
+      <a href="https://www.linkedin.com/in/rowansharman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity">  |  </i></a>
+      <a href="https://github.com/rowansharman" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    {{ content }}
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+</body>
+
+</html>
