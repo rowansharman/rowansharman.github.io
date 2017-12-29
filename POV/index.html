@@ -1,0 +1,34 @@
+---
+layout: default
+title: Persistence of Vision Writer
+---
+<!-- Header -->
+<header id="portfolio">
+  <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-container">
+    <h1><b><a href="/"><i class="fa fa-arrow-left w3-hover-opacity"></i></a> Persistence of Vision Writer</b></h1>
+    <h4>Personal Project</h4>
+    <h6>November 2014</h6>
+  </div>
+</header>
+
+<div class="w3-row-padding">
+  <img src="./images/POV_Text.jpg" alt="Half-second exposure of POV writer in action" style="width:100%" class="w3-full w3-container w3-margin-bottom">
+  <div class="w3-half w3-container w3-white">
+    <p>Inspired by some things I had recently learned about LEDs and shift registers, I decided to make a compact, self-contained Persistence-of-Vision board.</p>
+    This device flashes its seven LEDs on and off rapidly so that if moved quickly it appears to write text in the air.
+    <p>I designed, fabricated, and coded it completely from scratch with no special tools.</p>
+    <p>The etching process to make the PCB was very interesing. After designing it, I printed the traces on glossy paper with a laser printer, then used an iron to transfer the toner to a copper-clad board. Next I placed the board in a solution of hydrochloric
+      acid and hydrogen peroxide, which etched the uncovered copper off the board, leaving only the traces. Finally, I drilled the holes and soldered in the components. The process produces much coarser boards than the ones you can order commercially,
+      but it is practically free and has no lead time. For simple single- or even double-sided boards used for prototypes or single-application projects, the process is effective.</p>
+    <p>The circuit for this project is also useful and interesting because it allows you to control the seven LEDs on the board simultaneously using a shift register. This allows you to use only three Arduino pins. This is detailed slightly more in my
+      <a href="https://rowansharman.com/POV/POV_PuTTY/POV_PuTTY.ino" target="_blank">code</a>. Since the interface to the Arduino is also broken out into Tx and Rx pins on my board, for one application I was able to add a bluetooth
+      module so I could control the text with a simple app I wrote for my phone using <a href="http://appinventor.mit.edu/explore/" target="_blank">MIT App Inventor</a>.
+    </p>
+  </div>
+  <div class="w3-half w3-container w3-white">
+    <img src="./images/POV_Top.jpg" alt="Populated board top" style="width:100%" class="">
+    <img src="./images/POV_Bottom.jpg" alt="Etched and soldered board bottom" style="width:100%" class="">
+  </div>
+
+</div>
