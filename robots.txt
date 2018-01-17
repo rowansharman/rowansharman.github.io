@@ -5,6 +5,6 @@ Disallow: /_includes/
 Disallow: /_layouts/
 Disallow: /fonts/
 Disallow: /Template_files/
-Disallow: _config.yml
-Disallow: .gitignore
-Disallow: CNAME
+Disallow: /_config.yml
+Disallow: /.gitignore
+Disallow: /CNAME
