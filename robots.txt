@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /prefs/
+Disallow: /lewbob.jpg
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /fonts/
+Disallow: /Template_files/
+Disallow: _config.yml
+Disallow: .gitignore
+Disallow: CNAME
