@@ -8,7 +8,6 @@
 var trackOutboundLink = function(link) {
    ga('send', 'event', 'outbound', 'click', link, {
      'transport': 'beacon',
-     'hitCallback': function(){document.location = link;}
    });
 }
 </script>
