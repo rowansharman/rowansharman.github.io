@@ -51,8 +51,13 @@
 
   <style>
     body, h1, h2, h3, h4, h5, h6 {font-family: "Raleway", sans-serif}
-    {% if page.hasSlideshow == 1 %}
-    .mySlides {display: none;}
+
+    {% if page.hasSlideshow1 == 1 %}
+    .mySlides1 {display: none;}
+    {% endif %}
+
+    {% if page.hasSlideshow2 == 1 %}
+    .mySlides2 {display: none;}
     {% endif %}
 
     {% if page.hasDropdown == 1 %}
@@ -81,7 +86,7 @@
     <div class="w3-panel w3-large">
       <a href="mailto:rowan.sharman@students.olin.edu"><i class="fa fa-envelope w3-hover-opacity fa-lg"></i></a>
       <sp><b>|</b></sp>
-      <a href="http://rowansharman.com/rowansharman_resume.pdf" onclick="trackOutboundLink('resume');" target="_blank" style="text-decoration: none">
+      <a href="http://rowansharman.com/rowansharman_resume.pdf" target="_blank" style="text-decoration: none">
         <span class=" w3-hover-opacity">
           <i class="fa fa-file-text"></i>
           <i class="fa fa-sub fa-user"></i>
@@ -117,9 +122,14 @@
     }
   </script>
 
-  {% if page.hasSlideshow == 1 %}
-  {% include slideshow.html %}
+  {% if page.hasSlideshow1 == 1 %}
+  {% include slideshow1.html %}
   {% endif %}
+
+  {% if page.hasSlideshow2 == 1 %}
+  {% include slideshow2.html %}
+  {% endif %}
+
 
 </body>
 

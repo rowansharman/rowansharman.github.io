@@ -1,0 +1,18 @@
+<script>
+  var myIndex2 = 0;
+  carousel2();
+
+  function carousel2() {
+    var i;
+    var x2 = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x2.length; i++) {
+      x2[i].style.display = "none";
+    }
+    myIndex2++;
+    if (myIndex2 > x2.length) {
+      myIndex2 = 1
+    }
+    x2[myIndex2 - 1].style.display = "block";
+    setTimeout(carousel2, 3000); // Change image every 2 seconds
+  }
+</script>
