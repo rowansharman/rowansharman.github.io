@@ -7,7 +7,7 @@ View it at [rowansharman.com](https://rowansharman.com?utm_source=github&wemail=
 - [Set up Jekyll on Linux](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#platform-linux) to preview your site locally (I wasn't able to get it to work on Windows)
 - [This site](http://jmcglone.com/guides/github-pages/) has a good introduction to Jekyll and liquid tags and layouts and stuff. Also look at [includes](https://jekyllrb.com/docs/includes/)
 - [GitHub's guide to setting up GitHub Pages sites with custom domains](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
-- [This gist](https://gist.github.com/cvan/8630f847f579f90e0c014dc5199c337b) shows exactly how to use [Cloudflare](https://www.cloudflare.com) to serve a GitHub Pages site with a custom domain with HTTPS
+- [This gist](https://gist.github.com/cvan/8630f847f579f90e0c014dc5199c337b) shows exactly how to use [Cloudflare](https://www.cloudflare.com) to serve a GitHub Pages site with a custom domain with HTTPS (except GitHub now supports HTTPS for custom domains so you don't need to do this)
 - [This page](https://ricostacruz.com/til/relative-paths-in-jekyll) has a good explanation of how paths work with GitHub Pages and Jekyll
 - [Google Analytics](https://analytics.google.com) is pretty easy to set up
 - Adding some [source tracking](https://support.google.com/analytics/answer/1033867?hl=en) can be useful
