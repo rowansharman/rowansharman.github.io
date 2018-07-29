@@ -2,7 +2,7 @@
 This website is my ongoing attempt to catalog and showcase some of my projects. It's hosted right here.  
 View it at [rowansharman.com](https://rowansharman.com?utm_source=github&wemail=gh)  
 
-### Here are links to some of the resources I found most helpful during the process:
+### Here are links to some of the resources I found most helpful while building it:
 - [w3.css](https://www.w3schools.com/w3css/)
 - [Set up Jekyll on Linux](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#platform-linux) to preview your site locally (I wasn't able to get it to work on Windows)
 - [This site](http://jmcglone.com/guides/github-pages/) has a good introduction to Jekyll and liquid tags and layouts and stuff. Also look at [includes](https://jekyllrb.com/docs/includes/)
@@ -13,3 +13,5 @@ View it at [rowansharman.com](https://rowansharman.com?utm_source=github&wemail=
 - Adding some [source tracking](https://support.google.com/analytics/answer/1033867?hl=en) can be useful
 - Once you have UTMs set up, [clean up your URL](https://wistia.com/blog/fresh-url)
   - Particularly note that the ```wemail``` parameter is cleared by wistia, but recorded as a page by Google Analytics ;)
+
+Disclaimer: I'm a meche not a web developer. I probably did a lot of stuff the wrong way, but it works, so hey...
