@@ -8,3 +8,4 @@ Disallow: /Template_files/
 Disallow: /_config.yml
 Disallow: /.gitignore
 Disallow: /CNAME
+Disallow: /creativeapproaches
