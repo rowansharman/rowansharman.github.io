@@ -29,7 +29,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="treehouseModal" class="modal">
+  <div id="treehouseModal" class="modal" onclick="checkBackgroundClick('treehouseModal')">
     <span class="close cursor" onclick="closeModal('treehouseModal')">&times;</span>
     <div class="modal-content">
 
@@ -79,7 +79,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="loftModal" class="modal">
+  <div id="loftModal" class="modal" onclick="checkBackgroundClick('loftModal')">
     <span class="close cursor" onclick="closeModal('loftModal')">&times;</span>
     <div class="modal-content">
 
@@ -146,7 +146,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="chainsawbikeModal" class="modal">
+  <div id="chainsawbikeModal" class="modal" onclick="checkBackgroundClick('chainsawbikeModal')">
     <span class="close cursor" onclick="closeModal('chainsawbikeModal')">&times;</span>
     <div class="modal-content">
 
@@ -200,7 +200,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="sawhorsesModal" class="modal">
+  <div id="sawhorsesModal" class="modal" onclick="checkBackgroundClick('sawhorsesModal')">
     <span class="close cursor" onclick="closeModal('sawhorsesModal')">&times;</span>
     <div class="modal-content">
 
@@ -251,7 +251,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="porchModal" class="modal">
+  <div id="porchModal" class="modal" onclick="checkBackgroundClick('porchModal')">
     <span class="close cursor" onclick="closeModal('porchModal')">&times;</span>
     <div class="modal-content">
 
@@ -294,7 +294,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="knockmmModal" class="modal">
+  <div id="knockmmModal" class="modal" onclick="checkBackgroundClick('knockmmModal')">
     <span class="close cursor" onclick="closeModal('knockmmModal')">&times;</span>
     <div class="modal-content">
 
@@ -348,7 +348,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="plywoodrackModal" class="modal">
+  <div id="plywoodrackModal" class="modal" onclick="checkBackgroundClick('plywoodrackModal')">
     <span class="close cursor" onclick="closeModal('plywoodrackModal')">&times;</span>
     <div class="modal-content">
 
@@ -391,7 +391,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="lumberrackModal" class="modal">
+  <div id="lumberrackModal" class="modal" onclick="checkBackgroundClick('lumberrackModal')">
     <span class="close cursor" onclick="closeModal('lumberrackModal')">&times;</span>
     <div class="modal-content">
 
@@ -442,7 +442,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="hydroponicscartModal" class="modal">
+  <div id="hydroponicscartModal" class="modal" onclick="checkBackgroundClick('hydroponicscartModal')">
     <span class="close cursor" onclick="closeModal('hydroponicscartModal')">&times;</span>
     <div class="modal-content">
 
@@ -496,7 +496,7 @@ hasDropdown: 1
 
   </div>
 
-  <div id="capstanfixtureModal" class="modal">
+  <div id="capstanfixtureModal" class="modal" onclick="checkBackgroundClick('capstanfixtureModal')">
     <span class="close cursor" onclick="closeModal('capstanfixtureModal')">&times;</span>
     <div class="modal-content">
 
@@ -541,11 +541,6 @@ hasDropdown: 1
   </div>
 </div> <!--End Row 4-->
 
-
-<!-- <script>
-ga('create','UA-111601381-1','auto','myTracker');
-console.log("done");
-</script> -->
 
 <script>
 
@@ -593,6 +588,13 @@ function showSlides(n, projectSlides, projectDemos) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function checkBackgroundClick(modalID) {
+  if (!(event.target).closest(".modal-content")) {
+    closeModal(modalID);
+  }
+}
+
 </script>
 
 <!-- ====================Template==================== -->
@@ -605,7 +607,7 @@ function showSlides(n, projectSlides, projectDemos) {
 
 </div>
 
-<div id="ProjectModal" class="modal">
+<div id="ProjectModal" class="modal" onclick="checkBackgroundClick('ProjectModal')">
   <span class="close cursor" onclick="closeModal('ProjectModal')">&times;</span>
   <div class="modal-content">
 
