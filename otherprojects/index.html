@@ -541,6 +541,12 @@ hasDropdown: 1
   </div>
 </div> <!--End Row 4-->
 
+
+<!-- <script>
+ga('create','UA-111601381-1','auto','myTracker');
+console.log("done");
+</script> -->
+
 <script>
 
 var slideIndex = 1;
@@ -549,6 +555,9 @@ function openModal(modalID, projectSlides, projectDemos) {
   document.getElementById(modalID).style.display = "block";
   slideIndex = 1;
   showSlides(1, projectSlides,projectDemos);
+  var proj = modalID;
+  proj = proj.substring(0,proj.length-5);
+  ga('gtag_UA_111601381_1.send', 'event', 'OtherProjects', 'click', proj);
 }
 
 // Close the Modal
