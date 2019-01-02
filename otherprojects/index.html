@@ -15,299 +15,521 @@ hasDropdown: 1
 <div class="w3-container">
   <h3>Less Well-Documented and Smaller Personal Projects</h3>
 </div>
-<div class="w3-row-padding">
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Treehouse-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/treehouse/treehouse.jpg" style="width:100%">
-        <p><b>Treehouse</b></p>
-        <p>My dad and I built this treehouse over several years. It utilizes a flexible "foundation" to allow independent movement of the two trees supporting it.</p>
+<div class="w3-row-padding"> <!--Begin Row 1-->
+
+
+  <!-- ====================Treehouse==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('treehouseModal','treehouseSlide', 'treehouseDemo')">
+    <div>
+      <img src="./images/treehouse/treehouse.jpg" style="width:100%">
+      <p><b>Treehouse</b></p>
+      <p>My dad and I built this treehouse over several years. It utilizes a flexible "foundation" to allow independent movement of the two trees supporting it.</p>
+    </div>
+
+  </div>
+
+  <div id="treehouseModal" class="modal">
+    <span class="close cursor" onclick="closeModal('treehouseModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="treehouseSlide">
+        <img src="./images/treehouse/treehouse.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/treehouse/treehouse.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/treehouse/treehouse.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/treehouse/treehouseinside.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/treehouse/treehouseinside.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/treehouse/treehouserailing.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/treehouse/treehouserailing.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="treehouseSlide">
+        <img src="./images/treehouse/treehouseinside.jpg">
+      </div>
+
+      <div class="mySlides" name="treehouseSlide">
+        <img src="./images/treehouse/treehouserailing.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'treehouseSlide', 'treehouseDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'treehouseSlide', 'treehouseDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="treehouseDemo" src="./images/treehouse/treehouse.jpg" onclick="currentSlide(1, 'treehouseSlide', 'treehouseDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="treehouseDemo" src="./images/treehouse/treehouseinside.jpg" onclick="currentSlide(2, 'treehouseSlide', 'treehouseDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="treehouseDemo" src="./images/treehouse/treehouserailing.jpg" onclick="currentSlide(3, 'treehouseSlide', 'treehouseDemo')" alt="">
       </div>
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Loft-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/loft/loftconstruction_small.jpg" style="width:100%">
-        <p><b>Lofted Dorm Room</b></p>
-        <p>My roomate and I collaborated with another roomate pair to convert our room into a two-level work space and media center, with beds in the other room.</p>
+  <!-- ====================Loft==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('loftModal', 'loftSlide', 'loftDemo')">
+    <div>
+      <img src="./images/loft/loftconstruction.jpg" style="width:100%">
+      <p><b>Lofted Dorm Room</b></p>
+      <p>My roomate and I collaborated with another roomate pair to convert our room into a two-level work space and media center, with beds in the other room.</p>
+    </div>
+
+  </div>
+
+  <div id="loftModal" class="modal">
+    <span class="close cursor" onclick="closeModal('loftModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="loftSlide">
+        <img src="./images/loft/loftconstruction.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/loft/loftconstruction.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/loft/loftconstruction.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/loft/loftworkbench.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/loft/loftworkbench.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/loft/loftupstairs.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/loft/loftupstairs.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
-        <div class="w3-row-padding">
-          <a href="./images/loft/loftshelf.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/loft/loftshelf.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/loft/loftvacuuming.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/loft/loftvacuuming.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="loftSlide">
+        <img src="./images/loft/loftworkbench.jpg">
       </div>
+
+      <div class="mySlides" name="loftSlide">
+        <img src="./images/loft/loftupstairs.jpg">
+      </div>
+
+      <div class="mySlides" name="loftSlide">
+        <img src="./images/loft/loftshelf.jpg">
+      </div>
+
+      <div class="mySlides" name="loftSlide">
+        <img src="./images/loft/loftvacuuming.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'loftSlide', 'loftDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'loftSlide', 'loftDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column5">
+        <img class="demo" name="loftDemo" src="./images/loft/loftconstruction.jpg" onclick="currentSlide(1, 'loftSlide', 'loftDemo')" alt="">
+      </div>
+
+      <div class="column5">
+        <img class="demo" name="loftDemo" src="./images/loft/loftworkbench.jpg" onclick="currentSlide(2, 'loftSlide', 'loftDemo')" alt="">
+      </div>
+
+      <div class="column5">
+        <img class="demo" name="loftDemo" src="./images/loft/loftupstairs.jpg" onclick="currentSlide(3, 'loftSlide', 'loftDemo')" alt="">
+      </div>
+
+      <div class="column5">
+        <img class="demo" name="loftDemo" src="./images/loft/loftshelf.jpg" onclick="currentSlide(4, 'loftSlide', 'loftDemo')" alt="">
+      </div>
+
+      <div class="column5">
+        <img class="demo" name="loftDemo" src="./images/loft/loftvacuuming.jpg" onclick="currentSlide(5, 'loftSlide', 'loftDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Chainsaw Bike-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/chainsawbike/chainsawbike_small.jpg" style="width:100%">
-        <p><b>Chainsaw Bike</b></p>
-        <p>Yes, it's just what it looks like, and yes, it worked. Built for free with found materials (including the bike, but I paid $15 for the chainsaw).</p>
-      </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/chainsawbike/chainsawbike.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/chainsawbike/chainsawbike.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/chainsawbike/chainsawbikeside.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/chainsawbike/chainsawbikeside.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/chainsawbike/chainsawbiketop.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/chainsawbike/chainsawbiketop.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
-      </div>
+<!-- ====================Chainsaw Bike==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('chainsawbikeModal', 'chainsawbikeSlide', 'chainsawbikeDemo')">
+    <div>
+      <img src="./images/chainsawbike/chainsawbike_small.jpg" style="width:100%">
+      <p><b>Chainsaw Bike</b></p>
+      <p>Yes, it's just what it looks like, and yes, it worked (mostly). Built for free with found materials (including the bike, but I paid $15 for the chainsaw).</p>
     </div>
+
   </div>
-</div>
 
-<div class="w3-row-padding">
+  <div id="chainsawbikeModal" class="modal">
+    <span class="close cursor" onclick="closeModal('chainsawbikeModal')">&times;</span>
+    <div class="modal-content">
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Sawhorses-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/sawhorses/sawhorse_small.jpg" style="width:100%">
-        <p><b>Sawhorses</b></p>
-        <p>Designing and building one's own sawhorses is a rite of passage in carpentry.</p>
+      <div class="mySlides" name="chainsawbikeSlide">
+        <img src="./images/chainsawbike/chainsawbike.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/sawhorses/sawhorse.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/sawhorses/sawhorse.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/sawhorses/sawhorse_cad.png" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/sawhorses/sawhorse_cad.png" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/sawhorses/sawhorsestack.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/sawhorses/sawhorsestack.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="chainsawbikeSlide">
+        <img src="./images/chainsawbike/chainsawbikeside.jpg">
       </div>
+
+      <div class="mySlides" name="chainsawbikeSlide">
+        <img src="./images/chainsawbike/chainsawbiketop.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'chainsawbikeSlide', 'chainsawbikeDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'chainsawbikeSlide', 'chainsawbikeDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="chainsawbikeDemo" src="./images/chainsawbike/chainsawbike.jpg" onclick="currentSlide(1, 'chainsawbikeSlide', 'chainsawbikeDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="chainsawbikeDemo" src="./images/chainsawbike/chainsawbikeside.jpg" onclick="currentSlide(2, 'chainsawbikeSlide', 'chainsawbikeDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="chainsawbikeDemo" src="./images/chainsawbike/chainsawbiketop.jpg" onclick="currentSlide(3, 'chainsawbikeSlide', 'chainsawbikeDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Porch-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/porch/porch.jpg" style="width:100%">
-        <p><b>Shop Porch</b></p>
-        <p>When we built a shed onto the back of our shop, we put in another a door and I designed a small porch and steps that my dad and I constructed.</p>
+</div> <!--End Row 1-->
+<div class="w3-row-padding"> <!--Begin Row 2-->
+
+  <!-- ====================Sawhorses==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('sawhorsesModal', 'sawhorsesSlide', 'sawhorsesDemo')">
+    <div>
+      <img src="./images/sawhorses/sawhorse_small.jpg" style="width:100%">
+      <p><b>Sawhorses</b></p>
+      <p>Designing and building one's own sawhorses is a rite of passage in carpentry.</p>
+    </div>
+
+  </div>
+
+  <div id="sawhorsesModal" class="modal">
+    <span class="close cursor" onclick="closeModal('sawhorsesModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="sawhorsesSlide">
+        <img src="./images/sawhorses/sawhorse.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/porch/porch.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/porch/porch.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/porch/porch_cad.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/porch/porch_cad.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="sawhorsesSlide">
+        <img src="./images/sawhorses/sawhorse_cad.png">
       </div>
+
+      <div class="mySlides" name="sawhorsesSlide">
+        <img src="./images/sawhorses/sawhorsestack.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'sawhorsesSlide', 'sawhorsesDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'sawhorsesSlide', 'sawhorsesDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="sawhorsesDemo" src="./images/sawhorses/sawhorse.jpg" onclick="currentSlide(1, 'sawhorsesSlide', 'sawhorsesDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="sawhorsesDemo" src="./images/sawhorses/sawhorse_cad.png" onclick="currentSlide(2, 'sawhorsesSlide', 'sawhorsesDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="sawhorsesDemo" src="./images/sawhorses/sawhorsestack.jpg" onclick="currentSlide(3, 'sawhorsesSlide', 'sawhorsesDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Knock MM-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/knockmm/knockmm_small.jpg" style="width:100%">
-        <p><b>Secret Knock M&amp;M Dispenser</b></p>
-        <p> Features: program code by knocking, play back code with button press, adjust tolerance, and recognize pattern without regard to tempo</p>
-      </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/knockmm/knockmm.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/knockmm/knockmm.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/knockmm/knockmmopen.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/knockmm/knockmmopen.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/knockmm/knockmmelectronics.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/knockmm/knockmmelectronics.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
-      </div>
+  <!-- ====================Shop Porch==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('porchModal', 'porchSlide', 'porchDemo')">
+    <div>
+      <img src="./images/porch/porch.jpg" style="width:100%">
+      <p><b>Shop Porch</b></p>
+      <p>When we built a shed onto the back of our shop, we put in another a door and I designed a small porch and steps that my dad and I constructed.</p>
     </div>
+
   </div>
-</div>
 
-<div class="w3-row-padding">
+  <div id="porchModal" class="modal">
+    <span class="close cursor" onclick="closeModal('porchModal')">&times;</span>
+    <div class="modal-content">
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Plywood Rack-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/plywoodrack/plywoodrack_small.jpg" style="width:100%">
-        <p><b>Rolling Plywood Rack</b></p>
-        <p>A storage solution for the copious amount of scrap plywood my dad and I generate and use.</p>
+      <div class="mySlides" name="porchSlide">
+        <img src="./images/porch/porch.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/plywoodrack/plywoodrack.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/plywoodrack/plywoodrack.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/plywoodrack/plywoodrack_cad.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/plywoodrack/plywoodrack_cad.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="porchSlide">
+        <img src="./images/porch/porch_cad.jpg">
       </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'porchSlide', 'porchDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'porchSlide', 'porchDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column2">
+        <img class="demo" name="porchDemo" src="./images/porch/porch.jpg" onclick="currentSlide(1, 'porchSlide', 'porchDemo')" alt="">
+      </div>
+
+      <div class="column2">
+        <img class="demo" name="porchDemo" src="./images/porch/porch_cad.jpg" onclick="currentSlide(2, 'porchSlide', 'porchDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Lumber Rack-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/lumberrack/lumberrack_small.jpg" style="width:100%">
-        <p><b>Rolling Lumber Rack</b></p>
-        <p>When you build a big shed, you end up with a lot of extra lumber, which takes up a lot of space in your shed.</p>
+  <!-- ====================Knock MM==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('knockmmModal', 'knockmmSlide', 'knockmmDemo')">
+    <div>
+      <img src="./images/knockmm/knockmm_small.jpg" style="width:100%">
+      <p><b>Secret Knock M&amp;M Dispenser</b></p>
+      <p>Features: program code by knocking, play back code with button press, adjust tolerance, and recognize pattern without regard to tempo</p>
+    </div>
+
+  </div>
+
+  <div id="knockmmModal" class="modal">
+    <span class="close cursor" onclick="closeModal('knockmmModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="knockmmSlide">
+        <img src="./images/knockmm/knockmm.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/lumberrack/lumberrack_empty.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/lumberrack/lumberrack_empty.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/lumberrack/lumberrack_cad.png" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/lumberrack/lumberrack_cad.png" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="knockmmSlide">
+        <img src="./images/knockmm/knockmmopen.jpg">
       </div>
+
+      <div class="mySlides" name="knockmmSlide">
+        <img src="./images/knockmm/knockmmelectronics.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'knockmmSlide', 'knockmmDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'knockmmSlide', 'knockmmDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="knockmmDemo" src="./images/knockmm/knockmm.jpg" onclick="currentSlide(1, 'knockmmSlide', 'knockmmDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="knockmmDemo" src="./images/knockmm/knockmmopen.jpg" onclick="currentSlide(2, 'knockmmSlide', 'knockmmDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="knockmmDemo" src="./images/knockmm/knockmmelectronics.jpg" onclick="currentSlide(3, 'knockmmSlide', 'knockmmDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--Hydroponics Cart-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/hydroponicscart/cartdetail_small.jpg" style="width:100%">
-        <p><b>Cart for Hydroponics Bin</b></p>
-        <p>A quick project that turned into some good joinery practice.</p>
-      </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/hydroponicscart/cartdetail.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/hydroponicscart/cartdetail.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/hydroponicscart/cart.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/hydroponicscart/cart.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/hydroponicscart/cartwithbin.jpg" target="_blank">
-            <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/hydroponicscart/cartwithbin.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
-      </div>
+</div> <!--End Row 2-->
+<div class="w3-row-padding"> <!--Begin Row 3-->
+
+  <!-- ====================Plywood Rack==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('plywoodrackModal', 'plywoodrackSlide', 'plywoodrackDemo')">
+    <div>
+      <img src="./images/plywoodrack/plywoodrack_small.jpg" style="width:100%">
+      <p><b>Rolling Plywood Rack</b></p>
+      <p>A storage solution for the copious amount of scrap plywood my dad and I generate and use.</p>
     </div>
+
   </div>
-</div>
 
-<div class="w3-row-padding">
+  <div id="plywoodrackModal" class="modal">
+    <span class="close cursor" onclick="closeModal('plywoodrackModal')">&times;</span>
+    <div class="modal-content">
 
-  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal"> <!--capstan-->
-    <div class="dropdown">
-      <div>
-        <img src="./images/capstanfixture/capstan_small.jpg" style="width:100%">
-        <p><b>Capstan Fixture</b></p>
-        <p>A MatSci teammate and I designed and machined a set of fixtures for testing the tensile strength of fishing line on an Instron mechanical tester.</p>
+      <div class="mySlides" name="plywoodrackSlide">
+        <img src="./images/plywoodrack/plywoodrack.jpg">
       </div>
-      <div class="dropdown-content">
-        <div class="w3-row-padding">
-          <a href="./images/capstanfixture/capstanfixture.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/capstanfixture/capstanfixture.jpg" style="width:100%">
-            </div>
-          </a>
-          <a href="./images/capstanfixture/capstanfull.jpg" target="_blank">
-            <div class="w3-half w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-              <img src="./images/capstanfixture/capstanfull.jpg" style="width:100%">
-            </div>
-          </a>
-        </div>
+
+      <div class="mySlides" name="plywoodrackSlide">
+        <img src="./images/plywoodrack/plywoodrack_cad.jpg">
       </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'plywoodrackSlide', 'plywoodrackDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'plywoodrackSlide', 'plywoodrackDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column2">
+        <img class="demo" name="plywoodrackDemo" src="./images/plywoodrack/plywoodrack.jpg" onclick="currentSlide(1, 'plywoodrackSlide', 'plywoodrackDemo')" alt="">
+      </div>
+
+      <div class="column2">
+        <img class="demo" name="plywoodrackDemo" src="./images/plywoodrack/plywoodrack_cad.jpg" onclick="currentSlide(2, 'plywoodrackSlide', 'plywoodrackDemo')" alt="">
+      </div>
+
     </div>
   </div>
 
+  <!-- ====================Lumber Rack==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('lumberrackModal', 'lumberrackSlide', 'lumberrackDemo')">
+    <div>
+      <img src="./images/lumberrack/lumberrack_small.jpg" style="width:100%">
+      <p><b>Rolling Lumber Rack</b></p>
+      <p>When you build a big shed, you end up with a lot of extra lumber, which takes up a lot of space in your shed.</p>
+    </div>
+
+  </div>
+
+  <div id="lumberrackModal" class="modal">
+    <span class="close cursor" onclick="closeModal('lumberrackModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="lumberrackSlide">
+        <img src="./images/lumberrack/lumberrack.jpg">
+      </div>
+
+      <div class="mySlides" name="lumberrackSlide">
+        <img src="./images/lumberrack/lumberrack_cad.png">
+      </div>
+
+      <div class="mySlides" name="lumberrackSlide">
+        <img src="./images/lumberrack/lumberrack_empty.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'lumberrackSlide', 'lumberrackDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'lumberrackSlide', 'lumberrackDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="lumberrackDemo" src="./images/lumberrack/lumberrack.jpg" onclick="currentSlide(1, 'lumberrackSlide', 'lumberrackDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="lumberrackDemo" src="./images/lumberrack/lumberrack_cad.png" onclick="currentSlide(2, 'lumberrackSlide', 'lumberrackDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="lumberrackDemo" src="./images/lumberrack/lumberrack_empty.jpg" onclick="currentSlide(2, 'lumberrackSlide', 'lumberrackDemo')" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ====================Hydroponics Cart==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('hydroponicscartModal', 'hydroponicscartSlide', 'hydroponicscartDemo')">
+    <div>
+      <img src="./images/hydroponicscart/cartdetail_small.jpg" style="width:100%">
+      <p><b>Cart for Hydroponics Bin</b></p>
+      <p>A quick project that turned into some good joinery practice.</p>
+    </div>
+
+  </div>
+
+  <div id="hydroponicscartModal" class="modal">
+    <span class="close cursor" onclick="closeModal('hydroponicscartModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="hydroponicscartSlide">
+        <img src="./images/hydroponicscart/cartdetail.jpg">
+      </div>
+
+      <div class="mySlides" name="hydroponicscartSlide">
+        <img src="./images/hydroponicscart/cart.jpg">
+      </div>
+
+      <div class="mySlides" name="hydroponicscartSlide">
+        <img src="./images/hydroponicscart/cartwithbin.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'hydroponicscartSlide', 'hydroponicscartDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'hydroponicscartSlide', 'hydroponicscartDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column3">
+        <img class="demo" name="hydroponicscartDemo" src="./images/hydroponicscart/cartdetail.jpg" onclick="currentSlide(1, 'hydroponicscartSlide', 'hydroponicscartDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="hydroponicscartDemo" src="./images/hydroponicscart/cart.jpg" onclick="currentSlide(2, 'hydroponicscartSlide', 'hydroponicscartDemo')" alt="">
+      </div>
+
+      <div class="column3">
+        <img class="demo" name="hydroponicscartDemo" src="./images/hydroponicscart/cartwithbin.jpg" onclick="currentSlide(3, 'hydroponicscartSlide', 'hydroponicscartDemo')" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</div> <!--End Row 3-->
+<div class="w3-row-padding"> <!--Begin Row 4-->
+
+  <!-- ====================Capstan Fixture==================== -->
+  <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('capstanfixtureModal', 'capstanfixtureSlide', 'capstanfixtureDemo')">
+    <div>
+      <img src="./images/capstanfixture/capstan_small.jpg" style="width:100%">
+      <p><b>Capstan Fixture</b></p>
+      <p>A MatSci teammate and I designed and machined a set of fixtures for testing the tensile strength of fishing line on an Instron mechanical tester.</p>
+    </div>
+
+  </div>
+
+  <div id="capstanfixtureModal" class="modal">
+    <span class="close cursor" onclick="closeModal('capstanfixtureModal')">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides" name="capstanfixtureSlide">
+        <img src="./images/capstanfixture/capstanfixture.jpg">
+      </div>
+
+      <div class="mySlides" name="capstanfixtureSlide">
+        <img src="./images/capstanfixture/capstanfull.jpg">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 'capstanfixtureSlide', 'capstanfixtureDemo')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'capstanfixtureSlide', 'capstanfixtureDemo')">&#10095;</a>
+
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column2">
+        <img class="demo" name="capstanfixtureDemo" src="./images/capstanfixture/capstanfixture.jpg" onclick="currentSlide(1, 'capstanfixtureSlide', 'capstanfixtureDemo')" alt="">
+      </div>
+
+      <div class="column2">
+        <img class="demo" name="capstanfixtureDemo" src="./images/capstanfixture/capstanfull.jpg" onclick="currentSlide(2, 'capstanfixtureSlide', 'capstanfixtureDemo')" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ====================Website==================== -->
   <div class="w3-third w3-container w3-margin-bottom w3-hover-teal">
     <a href="https://github.com/rowansharman/rowansharman.github.io/blob/master/README.md" target="_blank" style="text-decoration:none">
       <div>
@@ -317,35 +539,116 @@ hasDropdown: 1
       </div>
     </a>
   </div>
+</div> <!--End Row 4-->
+
+<script>
+
+var slideIndex = 1;
+// Open the Modal
+function openModal(modalID, projectSlides, projectDemos) {
+  document.getElementById(modalID).style.display = "block";
+  slideIndex = 1;
+  showSlides(1, projectSlides,projectDemos);
+}
+
+// Close the Modal
+function closeModal(modalID) {
+  document.getElementById(modalID).style.display = "none";
+}
+
+// Next/previous controls
+function plusSlides(n, projectSlides, projectDemos) {
+  showSlides(slideIndex += n, projectSlides, projectDemos);
+}
+
+// Thumbnail image controls
+function currentSlide(n, projectSlides, projectDemos) {
+  showSlides(slideIndex = n, projectSlides, projectDemos);
+}
+
+function showSlides(n, projectSlides, projectDemos) {
+  console.log("It fuckin works")
+  var i;
+  var slides = document.getElementsByName(projectSlides);
+  var dots = document.getElementsByName(projectDemos);
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- ====================Template==================== -->
+<!-- <div class="w3-third w3-container w3-margin-bottom w3-hover-teal" onclick="openModal('ProjectModal', 'ProjectSlide', 'ProjectDemo')">
+  <div>
+    <img src="./images/Project/photo1.jpg" style="width:100%">
+    <p><b>Proj Name</b></p>
+    <p>Description.</p>
+  </div>
+
 </div>
 
-  <!--Blank placeholder-->
-  <!--
-    <div class="w3-third w3-container w3-margin-bottom w3-hover-teal">
-      <div class="dropdown">
-        <div>
-          <img src="./images/.jpg" style="width:100%">
-          <p><b></b></p>
-        </div>
-        <div class="dropdown-content">
-          <div class="w3-row-padding">
-            <a href="./images/.jpg" target="_blank">
-              <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-                <img src="./images/.jpg" style="width:100%">
-              </div>
-            </a>
-            <a href="./images/.jpg" target="_blank">
-              <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-                <img src="./images/.jpg" style="width:100%">
-              </div>
-            </a>
-            <a href="./images/.jpg" target="_blank">
-              <div class="w3-third w3-container w3-margin-bottom w3-margin-top w3-hover-opacity">
-                <img src="./images/.jpg" style="width:100%">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+<div id="ProjectModal" class="modal">
+  <span class="close cursor" onclick="closeModal('ProjectModal')">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides" name="ProjectSlide">
+      <img src="./images/Project/photo1.jpg">
     </div>
-    -->
+
+    <div class="mySlides" name="ProjectSlide">
+      <img src="./images/Project/photo2.jpg">
+    </div>
+
+    <div class="mySlides" name="ProjectSlide">
+      <img src="./images/Project/photo3.jpg">
+    </div>
+
+    <div class="mySlides" name="ProjectSlide">
+      <img src="./images/Project/photo4.jpg">
+    </div>
+
+    <div class="mySlides" name="ProjectSlide">
+      <img src="./images/Project/photo5.jpg">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1, 'ProjectSlide', 'ProjectDemo')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'ProjectSlide', 'ProjectDemo')">&#10095;</a>
+
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="columnN">
+      <img class="demo" name="ProjectDemo" src="./images/Project/photo1.jpg" onclick="currentSlide(1, 'ProjectSlide', 'ProjectDemo')" alt="">
+    </div>
+
+    <div class="columnN">
+      <img class="demo" name="ProjectDemo" src="./images/Project/photo2.jpg" onclick="currentSlide(2, 'ProjectSlide', 'ProjectDemo')" alt="">
+    </div>
+
+    <div class="columnN">
+      <img class="demo" name="ProjectDemo" src="./images/Project/photo3.jpg" onclick="currentSlide(3, 'ProjectSlide', 'ProjectDemo')" alt="">
+    </div>
+
+    <div class="columnN">
+      <img class="demo" name="ProjectDemo" src="./images/Project/photo4.jpg" onclick="currentSlide(4, 'ProjectSlide', 'ProjectDemo')" alt="">
+    </div>
+
+    <div class="columnN">
+      <img class="demo" name="ProjectDemo" src="./images/Project/photo5.jpg" onclick="currentSlide(5, 'ProjectSlide', 'ProjectDemo')" alt="">
+    </div>
+
+  </div>
+</div> -->
