@@ -393,7 +393,7 @@ img.demo {
   max-width: 90%;
 }
 
-.active,
+img.active,
 .demo:hover {
   opacity: 1;
 }
