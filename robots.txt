@@ -9,3 +9,4 @@ Disallow: /_config.yml
 Disallow: /.gitignore
 Disallow: /CNAME
 Disallow: /creativeapproaches
+Disallow: /calendar
