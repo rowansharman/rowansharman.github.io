@@ -1,0 +1,38 @@
+---
+layout: default
+title: Dijkstra's Algorithm in Google Sheets
+---
+<!-- Header -->
+<header id="portfolio">
+  <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-container">
+    <h1><b><a href="/"><i class="fa fa-arrow-left w3-hover-opacity"></i></a> Dijkstra's Algorithm in Google Sheets</b></h1>
+    <h4>Project for Discrete Mathematics Course</h4>
+    <h6>Fall 2019</h6>
+  </div>
+</header>
+
+<div class="w3-row-padding">
+
+  <div class="w3-third w3-container w3-white w3-margin-bottom">
+    <img src="./images/distances.gif" alt="generating the distances to every cell" style="width: 100%; height: auto;">
+    <p></p>
+    <img src="./images/path.gif" alt="finding the shortest path using the distance map" style="width: 100%; height: auto;">
+  </div>
+
+  <div class="w3-twothird w3-container w3-white">
+    <p>After implementing a couple shortest path algorithms in MATLAB for my Discrete Mathematics course, I decided to try to implement Dijkstra's Algorithm in Google Sheets. I managed to do it without scripting by basically creating a cellular automaton. The formula in each cell looks at the values of all its neighbors, then sets its value to the smallest of its neighbors plus one. When the values of all the cells settle, a map has been generated with the distances of all the cells from the starting cell.
+    </p>
+    <p>To generate the path from this map, another cellular atomaton works backward from the target cell. The target cell adds itself to a "path" map, and any cell whose value is one less than a neighbor cell in "path" adds itself to "path".
+    </p>
+
+    <p>
+      Feel free to clone my spreadsheet and play with it <a href="https://docs.google.com/spreadsheets/d/1m0JH9DPpaKxBn1NTT9mmvrTnstJoFoUWKvaDp8cZSDQ/edit" target="_blank" onclick="trackOutboundLink('dijkstra');">here</a>.
+    </p>
+
+  </div>
+
+  <img src="./images/distances.png" alt="distances to cells from starting cell" class="w3-third">
+  <img src="./images/path.png" alt="shortest path between starting and target cells" class="w3-third">
+
+</div>
