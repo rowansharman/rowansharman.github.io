@@ -34,30 +34,28 @@
   <!--<link rel="stylesheet" href="./Template_files/css">-->
   <!-- <link rel="stylesheet" href="/Template_files/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One&amp;ver=3.0.0" type="text/css" media="all"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" type="text/css" media="all" > -->
   <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway|Saira+Stencil+One" type="text/css" media="all">
+  <!-- <link rel="stylesheet" id="google-fonts-css2" href="https://fonts.googleapis.com/css?family=Saira+Stencil+One" type="text/css" media="all"> -->
+
 
   <style>
-    body, h1, h2, h3, h4, h5, h6 {font-family: "Raleway", sans-serif}
 
-    {% if page.hasSlideshow1 == 1 %}
-    .mySlides1 {display: none;}
-    {% endif %}
+  body, h1, h2, h3, h4, h5, h6 {font-family: "Raleway", sans-serif}
 
-    {% if page.hasSlideshow2 == 1 %}
-    .mySlides2 {display: none;}
-    {% endif %}
+  {% if page.hasSlideshow1 == 1 %}
+  .mySlides1 {display: none;}
+  {% endif %}
 
-    {% if page.hasDropdown == 1 %}
-    {% include dropdown.html %}
-    {% endif %}
+  {% if page.hasSlideshow2 == 1 %}
+  .mySlides2 {display: none;}
+  {% endif %}
 
-    abg {
-      font-family: "Saira+Stencil+One", Regular;
-      text-align: center;
-      line-height: 5%;
-      margin: 0;
-      padding: 0;
-    }
+  {% if page.hasDropdown == 1 %}
+  {% include dropdown.html %}
+  {% endif %}
 
   </style>
 </head>
@@ -68,8 +66,8 @@
   <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px; display: none;" id="mySidebar"><br>
     <div class="w3-container">
       <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa-solid fa-remove"></i>
-    </a>
+        <i class="fa-solid fa-remove"></i>
+      </a>
       <img src="/images/rowansharman.jpg" style="width:45%;" class="w3-round"><br><br>
       <h4><b>ROWAN SHARMAN</b></h4>
     </div>
@@ -84,28 +82,28 @@
         </span>
         RESUME</a>
         <a href="/calendar" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>CALENDAR</a>
+      </div>
+      <div class="w3-panel w3-large">
+        <a href="mailto:{%include email%}"><i class="fa-solid fa-envelope w3-hover-opacity fa-lg"></i></a>
+        <sp><b>|</b></sp>
+        <a href="https://www.linkedin.com/in/rowansharman/" target="_blank"><i class="fa-brands fa-linkedin w3-hover-opacity fa-lg"></i></a>
+        <sp><b>|</b></sp>
+        <a href="https://github.com/rowansharman" target="_blank"><i class="fa-brands fa-github w3-hover-opacity fa-lg"></i></a>
+
+      </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+      {{ content }}
+      {% include contact.html %}
+      {% include templateCred.html %}
     </div>
-    <div class="w3-panel w3-large">
-      <a href="mailto:{%include email%}"><i class="fa-solid fa-envelope w3-hover-opacity fa-lg"></i></a>
-      <sp><b>|</b></sp>
-      <a href="https://www.linkedin.com/in/rowansharman/" target="_blank"><i class="fa-brands fa-linkedin w3-hover-opacity fa-lg"></i></a>
-      <sp><b>|</b></sp>
-      <a href="https://github.com/rowansharman" target="_blank"><i class="fa-brands fa-github w3-hover-opacity fa-lg"></i></a>
 
-    </div>
-  </nav>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:300px">
-    {{ content }}
-    {% include contact.html %}
-    {% include templateCred.html %}
-  </div>
-
-  <script>
+    <script>
     // Script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
@@ -116,17 +114,17 @@
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
     }
-  </script>
+    </script>
 
-  {% if page.hasSlideshow1 == 1 %}
-  {% include slideshow1.html %}
-  {% endif %}
+    {% if page.hasSlideshow1 == 1 %}
+    {% include slideshow1.html %}
+    {% endif %}
 
-  {% if page.hasSlideshow2 == 1 %}
-  {% include slideshow2.html %}
-  {% endif %}
+    {% if page.hasSlideshow2 == 1 %}
+    {% include slideshow2.html %}
+    {% endif %}
 
 
-</body>
+  </body>
 
-</html>
+  </html>
