@@ -1,0 +1,33 @@
+---
+layout: default
+title: Access Control
+---
+<!-- Header -->
+<header id="portfolio">
+  <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa-solid fa-bars"></i></span>
+  <div class="w3-container">
+    <h1><b><a href="/"><i class="fa-solid fa-arrow-left w3-hover-opacity"></i></a> RFID Door Lock Retrofit</b></h1>
+    <h4>Personal Project</h4>
+    <h6>March 2021</h6>
+  </div>
+</header>
+
+<div class="w3-row-padding">
+  <img src="./images/access_control_animation.gif" alt="Animation" class="w3-third w3-container w3-margin-bottom">
+  <div class="w3-rest w3-container w3-white">
+    <p>I designed, built, and programmed an automatic RFID door lock for our house. The hardware replaces the inside half of the deadbolt assembly, mounting with the same screws that hold the original hardware. The linkage I designed includes slots in the coupling to the servo motor which allow enough range of motion to manually actuate the deadbolt without backdriving the servo in the event of a failure or power outage. A gearset changes the ratio so that the limited range of the servo can fully engage and disengage the deadbolt.</p>
+    <p>I designed the parts in SolidWorks and printed them at home on my Delta printer. I built the electronics on perf board and mounted them indoors. The only components outside are the RFID reader and beeper and a switch to detect door state. Neither of these components presents a vulnerability any worse than simple theft or duplication of an access card or key. New IDs are easily added to and removed from the Arduino's EEPROM by use of a master card. An RGB indicator displays door state, card acceptance or rejection, and new ID programming/deprogramming information. When the door is closed, it locks automatically.</p>
+    <p>As of this writing, the device has been installed on our door for over 1.5 years and no mechanical failures have ocurred. It is extremely convenient and saves us a lot of time and hassle going in and out of the house, especially when we have our hands full.</p>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <video class="w3-half w3-container w3-margin-bottom" controls>
+   <source src="./images/door_lock_video.mp4" type="video/mp4">
+  </video>
+  <div class="w3-row-padding, w3-rest">
+  <img src="./images/door_lock.jpg" alt="Door lock hardware" class="w3-col w3-container w3-margin-bottom">
+  <img src="./images/electronics.jpg" alt="Door lock electronics" class="w3-col w3-container w3-margin-bottom">
+  </div>
+  <!-- <img src="./images/door_lock.jpg" alt="Animation" class="w3-third w3-container w3-margin-bottom"> -->
+</div>
