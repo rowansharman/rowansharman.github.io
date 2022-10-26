@@ -1,1 +1,5 @@
-<div class="w3-black w3-center w3-padding-12">&copy; 2020 Rowan Sharman &nbsp;&nbsp;&nbsp;&nbsp; CSS by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+<div class="w3-black w3-center w3-padding-12">&copy; <span id="year"></span> Rowan Sharman &nbsp;&nbsp;&nbsp;&nbsp; CSS by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<script>
+  document.getElementById("year").innerHTML = (new Date().getFullYear());
+</script>
